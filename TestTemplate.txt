@@ -1,0 +1,89 @@
+{
+  "header": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "your.application.endpoint",
+    "Accept": "application/json",
+    "Accept-Charset": "utf-8",
+    "Authorization": "TSK-HMAC-SHA256-BASIC Datetime=20180101T203559Z, Signature=d8612ab1ff0301e1016d817c02350a2b76ea62e0"
+  },
+  "body": {
+    "version": "1.0",
+    "session": {
+      "new": true,
+      "sessionId": "sssss.....id"
+    },
+    "context": {
+      "System": {
+        "device": {
+          "deviceId": "string",
+          "supportedInterfaces": {
+            "AudioPlayer": {
+              "Play": true,
+              "Stop": false,
+              "ClearQueue": false
+            }
+          }
+        },
+        "application": {
+          "applicationId": "1072052610523357184"
+        },
+        "user": {
+          "userId": "uuuuuuuu....id",
+          "accessToken": "account....token"
+        }
+      }
+    },
+    "request": {
+      "type": "IntentRequest",
+      "requestId": "rrrrrr.....id",
+      "timestamp": "20170720T193559Z",
+      "dialogState": "string",
+      "queryText": "string",
+      "intent": {
+        "name": "monthly_instalment",
+        "confirmationStatus": "string",
+        "slots": {
+          "loan": {
+            "name": "loan",
+            "confirmationStatus": "string",
+            "values": [
+              {
+                "value": {
+                  "type": "sys.number",
+                  "value": "100",
+                  "origin": "贷款100万"
+                }
+              }
+            ]
+          },
+          "years": {
+            "name": "years",
+            "confirmationStatus": "string",
+            "values": [
+              {
+                "value": {
+                  "type": "usr.years",
+                  "value": "30",
+                  "origin": "贷款30年"
+                }
+              }
+            ]
+          },
+          "method": {
+            "name": "method",
+            "confirmationStatus": "string",
+            "values": [
+              {
+                "value": {
+                  "type": "usr.method",
+                  "value": "等额本息",
+                  "origin": "等额本息"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
