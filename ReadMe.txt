@@ -4,7 +4,7 @@
 |--config.php 叮当开发平台上面配置的skill配置
 |--dkcommon.php 业务函数，用户自己写
 |--index.php 入口函数，用户自己写逻辑
-|--tsk skd所在目录
+|--tsk sdk所在目录
 	|--common 一些通用的类
 	|--intent 意图定义类
 		|--intent.php 意图定义
